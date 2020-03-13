@@ -2,7 +2,9 @@
   "pages": [
     "pages/main/main",
     "pages/cart/cart",
-    "pages/center/center"
+    "pages/center/center",
+    "pages/detail/detail",
+    "pages/order/order"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -44,6 +46,12 @@
     "van-col": "@vant/weapp/col",
     "van-image": "@vant/weapp/image",
     "van-submit-bar": "@vant/weapp/submit-bar",
-    "van-tag": "@vant/weapp/tag"
+    "van-tag": "@vant/weapp/tag",
+    "van-grid": "@vant/weapp/grid",
+    "van-grid-item": "@vant/weapp/grid-item",
+    "van-goods-action": "@vant/weapp/goods-action",
+    "van-goods-action-icon": "@vant/weapp/goods-action-icon",
+    "van-goods-action-button": "@vant/weapp/goods-action-button",
+    "van-stepper": "@vant/weapp/stepper"
   }
 }

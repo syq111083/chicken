@@ -7,7 +7,7 @@
   </view>
   <van-button block plain color="#8B7CC7" round icon="/static/cart.png">添加到购物车</van-button>
   <view class="detail">
-  <van-button block plain color="#8B7CC7" round icon="/static/goodsDetail.png">商品详情</van-button>
+  <van-button block plain color="#8B7CC7" round icon="/static/goodsDetail.png" bind:click="clickDetail">商品详情</van-button>
   </view>
 </view>
 <view class="goods">

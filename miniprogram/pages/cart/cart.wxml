@@ -1,17 +1,19 @@
 <!--miniprogram/pages/cart/cart.wxml-->
+
 <van-card
-  num="2"
-  tag="标签"
-  price="10.00"
-  desc="描述信息"
-  title="商品标题"
-  thumb="{{ imageURL }}"
+  tag="笔记本"
+  price="10999.00"
+  desc="galaxy book lon"
+  title="notebook"
+  thumb="/static/lon.png"
 >
   <view slot="footer">
-    <van-button size="mini">增加</van-button>
-    <van-button size="mini">减少</van-button>
+    <van-button size="small" bindtap="" type="danger">删除</van-button>
+    <van-stepper value="{{ number }}" bind:change="onChange" />
   </view>
 </van-card>
+
+
 
 <van-submit-bar
   price="{{ 3050 }}"

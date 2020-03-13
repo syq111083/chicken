@@ -4,8 +4,14 @@
 </view>
 <view class="menu">
 <van-cell-group>
-  <van-cell title="用户" value="wxid" is-link size="large" icon="/static/head.png" />
-  <van-cell title="历史订单" icon="/static/order.png" size="large" is-link />
+  <van-cell title="用户" value="wxid" size="large" icon="/static/head.png" />
+  <van-cell title="订单管理" icon="/static/order.png" size="large" value="看下面" />
+  <van-grid>
+  <van-grid-item icon="other-pay" text="未付款" />
+  <van-grid-item icon="logistics" text="已付款" />
+  <van-grid-item icon="completed" text="已完成" />
+  <van-grid-item icon="orders-o" text="全部订单" />
+</van-grid>
   <van-cell title="地址管理" icon="/static/address.png" size="large"is-link />
 </van-cell-group>
 </view>

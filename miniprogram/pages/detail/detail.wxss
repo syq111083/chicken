@@ -1,0 +1,16 @@
+/* miniprogram/pages/detail/detail.wxss */
+image {
+  width: 100%;
+}
+
+.footer {
+  padding: 50rpx;
+}
+
+.swiper {
+  height: 100%;
+}
+
+.line {
+  height: 80rpx;
+}
