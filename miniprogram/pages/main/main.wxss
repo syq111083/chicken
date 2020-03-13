@@ -1,0 +1,31 @@
+.goodsPhoto {
+  height: 200rpx;
+  width: 200rpx;
+  margin: 10rpx;
+  border-radius: 20rpx;
+}
+
+.goods {
+  display: flex;
+  border: solid 6rpx;
+  border-color: #8B7CC7;
+  margin: 30rpx;
+  flex-direction: column;
+  padding: 10rpx;
+  border-radius: 30rpx;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10rpx;
+}
+
+text {
+  margin-left: 20rpx;
+}
+
+.detail {
+  margin-top: 10rpx;
+}

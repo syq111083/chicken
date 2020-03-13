@@ -1,0 +1,26 @@
+<!--miniprogram/pages/cart/cart.wxml-->
+<van-card
+  num="2"
+  tag="标签"
+  price="10.00"
+  desc="描述信息"
+  title="商品标题"
+  thumb="{{ imageURL }}"
+>
+  <view slot="footer">
+    <van-button size="mini">增加</van-button>
+    <van-button size="mini">减少</van-button>
+  </view>
+</van-card>
+
+<van-submit-bar
+  price="{{ 3050 }}"
+  button-text="提交订单"
+  bind:submit="onClickButton"
+  tip="{{ true }}"
+>
+  <van-tag type="primary">标签</van-tag>
+  <view slot="tip">
+    您的收货地址不支持同城送, <text>修改地址</text>
+  </view>
+</van-submit-bar>

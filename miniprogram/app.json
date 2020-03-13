@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/cart/cart",
+    "pages/center/center"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "麻辣鸡块",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "text": "主页",
+        "iconPath": "/static/various.png",
+        "selectedIconPath": "/static/various.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "static/cart.png",
+        "selectedIconPath": "static/cart.png"
+      },
+      {
+        "pagePath": "pages/center/center",
+        "text": "个人中心",
+        "iconPath": "/static/center.png",
+        "selectedIconPath": "/static/center.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-button": "@vant/weapp/button",
+    "van-search": "@vant/weapp/search",
+    "van-card": "@vant/weapp/card",
+    "van-cell": "@vant/weapp/cell",
+    "van-cell-group": "@vant/weapp/cell-group",
+    "van-row": "@vant/weapp/row",
+    "van-col": "@vant/weapp/col",
+    "van-image": "@vant/weapp/image",
+    "van-submit-bar": "@vant/weapp/submit-bar",
+    "van-tag": "@vant/weapp/tag"
+  }
+}

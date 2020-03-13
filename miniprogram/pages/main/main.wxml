@@ -1,0 +1,42 @@
+<!--miniprogram/pages/main/main.wxml-->
+<van-search value="{{ value }}" placeholder="请输入搜索关键词" show-action bind:search="onSearch" bind:cancel="onCancel" background="#8B7CC7" action-text="搜索" shape="round" />
+<view class="goods">
+  <view class="info">
+    <image src="/static/3.jpg" class="goodsPhoto"> </image>
+    <text>麻辣鸡块</text>
+  </view>
+  <van-button block plain color="#8B7CC7" round icon="/static/cart.png">添加到购物车</van-button>
+  <view class="detail">
+  <van-button block plain color="#8B7CC7" round icon="/static/goodsDetail.png">商品详情</van-button>
+  </view>
+</view>
+<view class="goods">
+  <view class="info">
+    <image src="/static/3.jpg" class="goodsPhoto"> </image>
+    <text>麻辣鸡块</text>
+  </view>
+  <van-button block plain color="#7232dd" round icon="/static/cart.png">添加到购物车</van-button>
+  <view class="detail">
+  <van-button block plain color="#7232dd" round icon="/static/goodsDetail.png">商品详情</van-button>
+  </view>
+</view>
+<view class="goods">
+  <view class="info">
+    <image src="/static/3.jpg" class="goodsPhoto"> </image>
+    <text>麻辣鸡块</text>
+  </view>
+  <van-button block plain color="#7232dd" round icon="/static/cart.png">添加到购物车</van-button>
+  <view class="detail">
+  <van-button block plain color="#7232dd" round icon="/static/goodsDetail.png">商品详情</van-button>
+  </view>
+</view>
+<view class="goods">
+  <view class="info">
+    <image src="/static/3.jpg" class="goodsPhoto"> </image>
+    <text>麻辣鸡块</text>
+  </view>
+  <van-button block plain color="#7232dd" round icon="/static/cart.png">添加到购物车</van-button>
+  <view class="detail">
+  <van-button block plain color="#7232dd" round icon="/static/goodsDetail.png">商品详情</van-button>
+  </view>
+</view>

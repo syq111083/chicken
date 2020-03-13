@@ -1,0 +1,28 @@
+/* miniprogram/pages/center/center.wxss */
+.avater {
+  border-radius: 100rpx;
+  height: 250rpx;
+  width: 250rpx;
+  margin: 0 auto;
+}
+
+.imformation {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  margin-top: 100rpx;
+}
+
+.head {
+  display: flex;
+  margin-top: 50rpx;
+}
+
+.menu {
+  margin-top: 100rpx;
+  font-size: 25rpx;
+}
+
+vant-cell {
+  height: 30rpx;
+}
