@@ -5,21 +5,38 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    "avater":null,
+    "nickname":null,
+    "openid":null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let instance = getApp()
+    let avater = instance.globalData.userInfo.avatarUrl
+    let openid = instance.globalData.openid
+    if (avater === null) {
+      wx.switchTab({
+        url:"/pages/main/main"
+      })
+    }
+    let nickname = instance.globalData.userInfo.nickName
+    this.setData({
+      avater:avater,
+      nickname:nickname,
+      openid:openid
+    })
+    // console.log(instance.globalData.userInfo.avatarUrl)
+    // console.log(that.data)
+    console.log(this.data.avater)
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
   },
 
   /**
