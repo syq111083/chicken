@@ -1,20 +1,23 @@
 <!--miniprogram/pages/center/center.wxml-->
+<view wx:if="{{isLogin}}">
 <view class="head">
-  <image src="{{avater}}" class="avater"></image>
+  <image src="{{avatar}}" class="avater">
+  </image>
 </view>
 <view class="menu">
-<van-cell-group>
-  <van-cell title="用户" value="{{nickname}}" size="large" icon="/static/head.png" />
-<van-cell title="openid" label="{{openid}}" size="large" />
-    <van-cell title="订单管理" icon="/static/order.png" size="large" value="看下面" is-link   link-type="navigateTo"
-  url="/pages/order/order" />
+  <van-cell-group>
+    <van-cell title="用户" value="{{nickname}}" size="large" icon="/static/head.png" />
+    <van-cell title="openid" label="{{openid}}" size="large" />
+    <van-cell title="订单管理" icon="/static/order.png" size="large" value="看下面" is-link link-type="navigateTo" url="/pages/order/order" />
 
-  <van-grid>
-  <van-grid-item icon="other-pay" text="未付款" />
-  <van-grid-item icon="logistics" text="已付款" />
-  <van-grid-item icon="completed" text="已完成" />
-  <van-grid-item icon="orders-o" text="全部订单" />
-</van-grid>
-  <van-cell title="地址管理" icon="/static/address.png" size="large"is-link />
-</van-cell-group>
+    <van-grid>
+      <van-grid-item icon="other-pay" text="未付款" />
+      <van-grid-item icon="logistics" text="已付款" />
+      <van-grid-item icon="completed" text="已完成" />
+      <van-grid-item icon="orders-o" text="全部订单" />
+    </van-grid>
+    <van-cell title="地址管理" icon="/static/address.png" size="large" is-link />
+  </van-cell-group>
 </view>
+</view>
+<van-button type="default" bind:getuserinfo="getuserinfo"  open-type="getUserInfo" block wx:else>点此授权用户信息</van-button>

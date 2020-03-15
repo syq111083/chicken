@@ -5,46 +5,123 @@ Page({
    * 页面的初始数据
    */
   data: {
-    "avater":null,
-    "nickname":null,
-    "openid":null
+    "avatar": null,
+    "nickname": null,
+    "openid": null,
+    "isLogin": wx.getStorage({
+      key: 'isLogin',
+      success: function (res) {
+        console.log("看看登陆成功了没有", res)
+      },
+    })
   },
+  getuserinfo: function (e) {
+    var appInstance = getApp()
+    let userInfo = e.detail.userInfo
+    let avatar = String(userInfo.avatarUrl)
+    let nickname = String(userInfo.nickName)
+    wx.setStorage({
+      key: "avatar",
+      data: avatar,
+      success: function (res) {
+        console.log("设置头像缓存成功:", res)
+      },
+      fail: function (res) {
+        console.log("设置头像缓存失败:", res)
+      }
+    })
+    wx.setStorage({
+      key: "nickname",
+      data: nickname,
+      success: function (res) {
+        console.log("设置昵称缓存成功:", res)
+      },
+      fail: function (res) {
+        console.log("设置昵称缓存失败:", res)
+      }
+    })
+    wx.setStorage({
+      key: "isLogin",
+      data: true,
+      success: function (res) {
+        console.log("设置登陆状态缓存成功:", res)
+      },
+      fail: function (res) {
+        console.log("设置登陆状态缓存失败:", res)
+      }
+    })
+    this.setData({
+      avatar: userInfo.avatarUrl,
+      nickname: userInfo.nickName,
+      isLogin: true,
+      openid: appInstance.data.openid
+    })
+  },
+
 
   /**
    * 生命周期函数--监听页面加载
    */
+  
   onLoad: function (options) {
-    let instance = getApp()
-    let avater = instance.globalData.userInfo.avatarUrl
-    let openid = instance.globalData.openid
-    if (avater === null) {
-      wx.switchTab({
-        url:"/pages/main/main"
-      })
-    }
-    let nickname = instance.globalData.userInfo.nickName
-    this.setData({
-      avater:avater,
-      nickname:nickname,
-      openid:openid
+    let that = this
+    wx.getStorage({
+      key: 'isLogin',
+      success: function (res) {
+        console.log("看看登陆成功了没有", res)
+        that.setData({
+          isLogin: true
+        })
+      },
+      fail: function (res) {
+        console.log("状态转换失败", res)
+      }
     })
-    // console.log(instance.globalData.userInfo.avatarUrl)
-    // console.log(that.data)
-    console.log(this.data.avater)
-  },
+    wx.getStorage({
+      key: 'avatar',
+      success: function (res) {
+        console.log("读取本地缓存", res)
+        that.setData({
+          avatar: res.data
+        })
+      },
+      fail: function (res) {
+        console.log("读取缓存失败", res)
+      }
+    }),
+      wx.getStorage({
+        key: 'nickname',
+        success: function (res) { 
+          that.setData({
+            nickname: res.data
+          })
+        },
+      }),
+      wx.getStorage({
+        key: 'openid',
+        success: function (res) { 
+          that.setData({
+            openid: res.data
+          })
+        },
+      }),
+      wx.getStorage({
+        key: 'isLogin',
+        success: function (res) {
+          console.log("看看登陆成功了没有", res)
+        }
+      })
 
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
-  },
+  onReady: function () { },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
-
-  },
+  onShow: function () { },
 
   /**
    * 生命周期函数--监听页面隐藏

@@ -52,6 +52,10 @@
     "van-goods-action": "@vant/weapp/goods-action",
     "van-goods-action-icon": "@vant/weapp/goods-action-icon",
     "van-goods-action-button": "@vant/weapp/goods-action-button",
-    "van-stepper": "@vant/weapp/stepper"
+    "van-stepper": "@vant/weapp/stepper",
+    "van-tab": "@vant/weapp/tab",
+    "van-tabs": "@vant/weapp/tabs",
+    "van-panel": "@vant/weapp/panel",
+    "van-dialog": "@vant/weapp/dialog"
   }
 }

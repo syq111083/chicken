@@ -1,2 +1,19 @@
 <!--miniprogram/pages/order/order.wxml-->
-<text>miniprogram/pages/order/order.wxml</text>
+<van-tabs swipeable>
+
+  <van-tab title="未付款">
+  <view class="panel">
+<van-card num="2" price="2.00" desc="描述信息" title="商品标题" thumb="/static/11.jpg" />
+<van-card num="2" price="2.00" desc="描述信息" title="商品标题" thumb="/static/12.jpg" />
+</view>
+
+  <view class="panel">
+<van-card num="2" price="2.00" desc="描述信息" title="商品标题" thumb="/static/11.jpg" />
+<van-card num="2" price="2.00" desc="描述信息" title="商品标题" thumb="/static/12.jpg" />
+</view>
+  </van-tab>
+  <van-tab title="已付款">内容 2</van-tab>
+  <van-tab title="已完成">内容 3</van-tab>
+  <van-tab title="全部订单">内容 4</van-tab>
+</van-tabs>
+
