@@ -2,10 +2,7 @@
 App({
   data: {
     "userInfo": {},
-    "openid": wx.getStorage({
-      key: 'openid',
-      success: function(res) {},
-    })
+    "openid": null
   },
   onLaunch: function () {
     let that = this

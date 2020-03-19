@@ -1,0 +1,4 @@
+/* miniprogram/pages/address/address.wxss */
+.top {
+  margin: 35rpx;
+}

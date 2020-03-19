@@ -1,0 +1,4 @@
+/* miniprogram/pages/addressModify/addressModify.wxss */
+.add {
+  margin: 50rpx;
+}

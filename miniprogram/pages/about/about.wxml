@@ -1,0 +1,3 @@
+<!--miniprogram/pages/about/about.wxml-->
+<van-divider contentPosition="center" customStyle="color: #1989fa;border-color: #1989fa;font-size: 18px;">made by </van-divider>
+<van-cell title="作者" value="syq111083@hotmail.com" size="large" />

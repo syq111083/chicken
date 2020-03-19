@@ -1,0 +1,12 @@
+<!--miniprogram/pages/address/address.wxml-->
+<view class="top">
+<van-button type="info" block bind:click="navigate">新增地址</van-button>
+</view>
+<van-cell-group wx:for="{{address}}" wx:key="*this">
+  <van-cell value="修改" label="{{item.city[0]}},{{item.city[1]}},{{item.city[2]}}-{{item.street}}" is-link>
+  <view slot="title">
+    <view class="van-cell-text">{{item.username}}</view>
+    <van-tag type="danger">默认地址</van-tag>
+  </view>
+</van-cell>
+</van-cell-group>

@@ -12,7 +12,7 @@
   <van-cell title=" " />
 </van-cell-group>
 
-<block wx:for="{{images}}">
+<block wx:for="{{images}}" wx:key="*this">
   <image src="{{item.src}}"></image>
 </block>
 

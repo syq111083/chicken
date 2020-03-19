@@ -16,8 +16,9 @@
       <van-grid-item icon="completed" text="已完成" />
       <van-grid-item icon="orders-o" text="全部订单" />
     </van-grid>
-    <van-cell title="地址管理" icon="/static/address.png" size="large" is-link />
+    <van-cell title="地址管理" icon="/static/address.png" size="large" is-link url="/pages/address/address" />
+    <van-cell title="关于" icon="chat" size="large" is-link url="/pages/about/about" />
   </van-cell-group>
 </view>
 </view>
-<van-button type="default" bind:getuserinfo="getuserinfo"  open-type="getUserInfo" block wx:else>点此授权用户信息</van-button>
+<van-button type="info" bind:getuserinfo="getuserinfo"  open-type="getUserInfo" block wx:else>点此授权用户信息</van-button>

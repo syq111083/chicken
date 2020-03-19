@@ -4,7 +4,10 @@
     "pages/cart/cart",
     "pages/center/center",
     "pages/detail/detail",
-    "pages/order/order"
+    "pages/order/order",
+    "pages/about/about",
+    "pages/address/address",
+    "pages/addressModify/addressModify"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -56,6 +59,11 @@
     "van-tab": "@vant/weapp/tab",
     "van-tabs": "@vant/weapp/tabs",
     "van-panel": "@vant/weapp/panel",
-    "van-dialog": "@vant/weapp/dialog"
+    "van-dialog": "@vant/weapp/dialog",
+    "van-divider": "@vant/weapp/divider",
+    "van-field": "@vant/weapp/field",
+    "van-area": "@vant/weapp/area",
+    "van-popup": "@vant/weapp/popup",
+    "van-sticky": "@vant/weapp/sticky"
   }
 }
