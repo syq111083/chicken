@@ -31,6 +31,7 @@ exports.main = (event, context) => {
     appid: wxContext.APPID,
     unionid: wxContext.UNIONID,
     env: wxContext.ENV,
+    right: "right your mother right"
   }
 }
 

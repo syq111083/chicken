@@ -64,6 +64,7 @@
     "van-field": "@vant/weapp/field",
     "van-area": "@vant/weapp/area",
     "van-popup": "@vant/weapp/popup",
-    "van-sticky": "@vant/weapp/sticky"
+    "van-sticky": "@vant/weapp/sticky",
+    "mljk-order": "/component/orderPanel/orderPanel"
   }
 }

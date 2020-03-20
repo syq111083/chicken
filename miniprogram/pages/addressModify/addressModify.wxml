@@ -8,7 +8,7 @@
     <van-field value="{{ street }}" placeholder="请输入详细街道地址" label="街道地址" required bind:change="setStreet"/>
   </van-cell-group>
   <van-divider wx:if="{{showProvince}}" />
-  <van-field value="{{ username }}" required clearable label="收货人" icon="question-o" placeholder="请输入收货人姓名" bind:click-icon="onClickIcon" maxlength="8" bind:change="setName" />
+  <van-field value="{{ username }}" required clearable label="收货人" placeholder="请输入收货人姓名"  maxlength="8" bind:change="setName" />
   <van-field value="{{ telephone }}" placeholder="请输入联系电话" label="手机号" required type="number" maxlength="11" clearable bind:change="setPhone"/>
 </van-cell-group>
 

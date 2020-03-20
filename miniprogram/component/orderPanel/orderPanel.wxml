@@ -1,1 +1,14 @@
 <!--component/orderPanel/orderPanel.wxml-->
+<view class="panel">
+  <van-cell-group border="false">
+    <van-cell title="订单编号" label="11111111112222222222223" />
+    <van-card num="2" price="2.00" desc="描述信息" title="商品标题" thumb="/static/11.jpg" />
+    <van-card num="2" price="2.00" desc="描述信息" title="商品标题" thumb="/static/12.jpg" />
+    <view class="orderDetail">
+      <van-button block type="primary" size="small">立即付款</van-button>
+    </view>
+    <view class="orderDetail">
+      <van-button block type="info" size="small">查看订单详情</van-button>
+    </view>
+  </van-cell-group>
+</view>

@@ -1,19 +1,9 @@
 <!--miniprogram/pages/order/order.wxml-->
-<van-tabs swipeable>
-
-  <van-tab title="未付款">
-  <view class="panel">
-<van-card num="2" price="2.00" desc="描述信息" title="商品标题" thumb="/static/11.jpg" />
-<van-card num="2" price="2.00" desc="描述信息" title="商品标题" thumb="/static/12.jpg" />
-</view>
-
-  <view class="panel">
-<van-card num="2" price="2.00" desc="描述信息" title="商品标题" thumb="/static/11.jpg" />
-<van-card num="2" price="2.00" desc="描述信息" title="商品标题" thumb="/static/12.jpg" />
-</view>
+<van-tabs swipeable active="{{active}}">
+  <van-tab title="未付款" name="notPay">
+    <mljk-order></mljk-order>
   </van-tab>
-  <van-tab title="已付款">内容 2</van-tab>
-  <van-tab title="已完成">内容 3</van-tab>
-  <van-tab title="全部订单">内容 4</van-tab>
+  <van-tab title="已付款" name="alreadyPay">内容 2</van-tab>
+  <van-tab title="已完成" name="finish">内容 3</van-tab>
+  <van-tab title="全部订单" name="all">内容 4</van-tab>
 </van-tabs>
-

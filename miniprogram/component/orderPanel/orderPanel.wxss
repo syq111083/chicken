@@ -1,1 +1,9 @@
 /* component/orderPanel/orderPanel.wxss */
+.panel {
+  margin: 15rpx;
+  padding: 10rpx;
+}
+
+.orderDetail {
+  padding: 10rpx;
+}
